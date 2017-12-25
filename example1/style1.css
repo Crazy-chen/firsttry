@@ -1,5 +1,44 @@
+/***CSS 手册：颜色页面 ***/
 
-a.homepage:link, a.homepage:visited {
+
+/*页面字体*/
+body {
+  font: 16px "Comic Sans MS", cursive;
+  background: url("Blue-rule.png");
+}
+
+/* 段落 */
+p {
+  color: #00f;
+}
+p:before {
+  content:url("Yellow-pin.png");
+}
+#first {
+  font-style:italic;
+}
+
+/* 首字母 */
+strong {
+  color: #f00;
+  background-color:#ddf;
+  font: 200% serif;
+}
+
+.carrot {color:#fa0;}
+.spinach{color:#080;}
+
+ol.info{list-style:decimal}
+
+/* li.numbered:before{
+  content: counter(mynum) ": ";
+  counter-increment: mynum;
+  font-weight: bold;
+} */
+/* li.open{list-style: circle;}
+li.closed{list-style: disc;} */
+
+/* a.homepage:link, a.homepage:visited {
   padding: 1px 10px 1px 10px;
   color: #fff;
   background: #555;
@@ -13,7 +52,13 @@ a.homepage:link, a.homepage:visited {
 a.homepage:hover,  a.homepage:focus,a.homepage:active{
   background-color: #666;
 }
+h1 {
+  font: 200% serif;
+  font-style: italic;
+  font-weight: bold;
+  font-variant:small-caps;
 
+} */
 /* .key {
   color: green;
 }

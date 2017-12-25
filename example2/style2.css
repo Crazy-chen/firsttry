@@ -1,0 +1,97 @@
+#parent-div{
+  position: relative;
+  font: bold 200% sans-serif;
+}
+
+#forward, #back {
+  position: absolute;
+  margin:500px;
+  top: 0px;
+  left: 0px;
+}
+
+#forward{
+  color:blue;
+}
+#back{
+  color:red;
+}
+
+
+
+h3.numbered {counter-reset: mynum;}
+h3 {
+  border-top:1px solid gray;
+}
+ul, #numbered{
+  float:left;
+  padding-right:0.5em;
+}
+h3{clear:left}
+
+
+#fixed-pin{
+  position:fixed;
+  top:3px;
+  right:3px;
+}
+
+/* h3{
+  border-top:4px solid #7c7;/*中绿*
+  background-color: #efe;/*浅绿*
+  columns: #005500;      /*深绿*
+} */
+p.numbered{padding-bottom:10px;}
+p.numbered:before {
+  content: counter(mynum) ": ";
+  counter-increment: mynum;
+  font-weight: bold;
+}
+ul,#numbered {
+  border: 10px solid rgba(0, 119, 255, 0.925);
+  padding-bottom:20px;
+  padding-right:1em;
+}
+#numbered {
+  padding-left: 20px;
+}
+
+li {
+  list-style: default;
+  margin-bottom:8px;
+}
+
+body {counter-reset: headnum;}
+h3:before{
+  content: "(" counter(headnum, upper-latin) ")";
+  counter-increment: headnum;
+}
+
+/*
+border:{
+  solid
+  dotted
+  dashed
+  doubled
+  inset
+  outset
+  ridge
+  groove
+  none/hidden
+  color:"transparent"(不改变布局)
+}
+margin
+padding
+
+
+position：
+relative
+fixed
+relative/fixed/absolute(可统一设为relative)--> absolute
+static 默认值 关闭位置属性时使用
+top/right/bottom/left/width/height
+
+
+
+
+*/

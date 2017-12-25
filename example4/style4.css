@@ -1,0 +1,90 @@
+
+/*** Print sample ***/
+@import url("print.css") print;
+
+/* defaults  for screen */
+#print-head,
+#print-foot {
+  display: none;
+  }
+h1:hover {
+  color:blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+常见媒介类型
+screen
+print
+projection
+all
+
+@media
+
+导航区父元素的id：nav-area
+导航区打印时隐藏
+@media print{
+  #nav-area {display:none}
+}
+
+@import url() 引入另外的样式表
+
+@page 双面打印：@page:left @page:right
+
+page-break-before/page-break-after/page-break-inside----控制文档内容的分页边界
+
+@page {margin: 1in;} 页边距设置为1inch
+h1 {page-break-before: always;} 确保每个h1元素都从新的一页开始
+
+
+五种特殊选择器
+:hover                  悬浮
+:focus                  获得键盘焦点
+:active                 当前活动元素
+:link                   未访问的超链接
+:visited                已访问的超链接
+
+
+cursor      鼠标形状
+pointer     超链接
+wait       程序无法接受输入
+progress   程序正在运行 可接受输入
+default  默认鼠标
+
+
+outline   获得焦点时创建轮廓 仅在父元素使用 relative/fixed/absolute 时有效 可将任意父元素position设为relative 因为他不会移            动 相当于border
+
+disabled readonly
+[disabled] [readonly]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
