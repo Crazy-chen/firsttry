@@ -1,0 +1,51 @@
+
+a.homepage:link, a.homepage:visited {
+  padding: 1px 10px 1px 10px;
+  color: #fff;
+  background: #555;
+  border-radius: 3px;
+  border: 1px outset rgba(50,50,50,.5);
+  font-family:georgia, serif;
+  font-size: 14px;
+  font-style: italic;
+  text-decoration: none;
+}
+a.homepage:hover,  a.homepage:focus,a.homepage:active{
+  background-color: #666;
+}
+
+/* .key {
+  color: green;
+}
+
+#principal{
+  font-weight: bolder;
+} 
+
+selector:pseudo-class {
+  property: value;
+}
+
+伪类列表
+:link
+:visted
+:hover
+:active
+:focus
+:first-child
+:nth-child(an+b)
+:nth-last-child(反序an+b)
+:target(代表特殊元素 id为url的片段标识符)
+:checked(<input type="radio/checkbox">处于选中状态 或select-option)
+:enabled (可以启用激活获取焦点的元素)
+:disabled
+
+
+基于关系的选择器
+A E	              元素A的任一后代元素E (后代节点指A的子节点，子节点的子节点，以此类推)
+A > E	            元素A的任一子元素E(也就是直系后代)
+E:first-child	    任一是其父母结点的第一个子节点的元素E
+B + E	            元素B的任一下一个兄弟元素E
+B ~ E	            B元素后面的拥有共同父元素的兄弟元素E
+（*）             表示任意元素
+*/
