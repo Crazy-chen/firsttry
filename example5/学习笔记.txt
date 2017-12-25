@@ -4,4 +4,7 @@ JS实现交互效果的三种方法：
   控制样式表
   控制样式表规则
   控制DOM元素
-  
+
+document.getElementById("Id") 相当于 #Id
+
+backgroundColor 相当于 background-color;JS不允许命名出现-，故用驼峰式写法
