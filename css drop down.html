@@ -5,16 +5,155 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <style type="text/css">
+  div.menu-bar{
+    position: relative;
+    margin:0;
+    padding:0;
+    height: 30px;
+    width: 50%;
+  }
+
+  div.menu-bar ul{
+    margin:0px;
+    padding:0;
+    position: absolute;
+    height:100%;
+    width:100%;
+    list-style-type: none;
+    background-color:#fffabf;
+    overflow: visible;
+  }
+
+  div.menu-bar ul li {
+    display:block;
+    float:left;
+    height:auto;
+    width:140px;
+  }
+
+  div.menu-bar li > a,div.menu-bar li > a:link, div.menu-bar li > a:visited, div.menu-bar li > a:active {
+    display:block;
+    padding:0 13px 0 5px;
+    height:100%;
+    width:120px;
+    border-right: 1px #5d5636 solid;
+    line-height: 30px;
+    font-family: fantasy, serif;
+    font-size: 20px;
+    font-style:oblique;
+    text-decoration:none;
+    background-color:#fffabf;
+    color:#5d5636;
+    cursor:pointer;
+  }
+
+  div.menu-bar li:hover > a {
+    color:#220000;
+    background-color: #eeeabe;
+  }
+
+  div.menu-bar ul ul {
+    margin-top: 2px;
+	  display: none;
+	  position: static;
+	  height: auto;
+	  /* vertical-menus width */
+	  width: 160px;
+	  border: 1px #666666 solid;
+    background-color: #fffabf;
+  }
+
+  div.menu-bar li:hover > ul {
+    display:block;
+  }
+
+  div.menu-bar ul ul li {
+    position:relative;
+    float: none;
+    display: block;
+    height: 28px;
+    width:100%;
+    border:none;
+  }
+
+  div.menu-bar ul ul li > a,
+  div.menu-bar ul ul li > a:link,
+  div.menu-bar ul ul li > a:visited,
+  div.menu-bar ul ul li > a:active {
+    	height: 100%;
+      width: 96%;
+      padding: 0 0 0 4%;
+      line-height: 28px;
+      background-color: transparent;
+      border: none;
+      color: #000000;
+      font-family: georgia, serif;
+      font-size: 20px;
+  }
+
+  div.menu-bar ul ul li:hover > span, div.menu-bar ul ul li:hover > a {
+	background-color: #cccccc;
+	color: #5d5636;
+}
+
+  a.menu-nav:after {
+    content:"\21AF";
+    float: right;
+    margin-right: 8px;
+  }
+  </style>
 </head>
 
 <!-- 我无话可说 -->
 <body>
-  <div>
+  <h1>My Personal Portfolio Webpage</h1>
+  
+  <div class="menu-bar">
     <ul>
-      <li>Camila</li>
-      <li>Alethaside</li>
-      <li></li>
-      <li></li>
+      <li>
+        <a href="#">HOME</a>
+      </li>
+      <li>
+        <a href="#"class="menu-nav">PROJECT</a>
+        <ul>
+          <li>
+            <a href="#">项目1</a>
+          </li>
+          <li>
+            <a href="#">项目2</a>
+          </li>
+          <li>
+            <a href="#">项目3</a>
+          </li>
+          <li>
+            <a href="#">项目4</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" class="menu-nav">More</a>
+        <ul>
+          <li>
+            <a href="#">项目1</a>
+          </li>
+          <li>
+            <a href="#">项目2</a>
+          </li>
+          <li>
+            <a href="#">项目3</a>
+          </li>
+          <li>
+            <a href="#">项目4</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">ABOUT ME</a>
+      </li>
+      <li>
+        <a href="#">CONTACT</a>
+      </li>
     </ul>
   </div>
 </body>
